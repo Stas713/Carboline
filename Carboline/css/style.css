@@ -1,0 +1,288 @@
+header{
+	background: #212121;
+	mix-blend-mode: normal;
+}
+a{
+	cursor: context-menu;
+}
+.container-fluid{
+	padding-right: 0;
+    padding-left: 0;
+}
+.logo{
+	left: 128px;
+	top: 23px;
+	margin-bottom: 3%;
+}
+.menu{
+	display: inline-block;
+	left: 33px;
+	top: 34px;
+	list-style-type: none;
+}
+.menu li a{
+	text-decoration: none;
+	display: block;
+	margin-right: 34px;
+    margin-left: 4px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	cursor: context-menu;
+	position: relative;
+}
+.menu>li:hover>a:after{
+	content: "";
+	position: absolute;
+   	top: 22px;
+    width: 103%;
+    left: 0px;
+    height: 2px;
+    background: linear-gradient(90deg, #F5841F 0%, #EA1E25 49%, #B32824 100%);
+}
+
+/*drop_down*/
+
+.menu li{
+	position: relative;
+	padding-bottom: 40px;
+}
+.menu li ul{
+	position: absolute;
+	display: none;
+	list-style-type: none;
+	width: 273px;
+	left: -43px;
+	top: 49px;
+	background: #212121;
+	border: 1px solid #6C6C6C;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.menu li ul li{
+	margin-left: -40px;
+	padding-bottom: 0;
+}
+.menu li ul li a{
+	padding: 20px 0px 12px 40px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-right: 0;
+	margin-left: 0
+}
+.menu li:hover>ul{
+	display: block;
+}
+.menu li ul li:hover>a{
+	background: rgba(255, 255, 255, 0.1);
+}
+.menu .drop{
+	width: 482px;
+}
+
+/*badges*/
+
+.badges{
+	top: 34px;
+}
+.badges a{
+	cursor: context-menu;
+}
+.badges>div{
+	margin: 0 24px;
+}
+.connection a{
+	text-decoration: none;
+	color: #E7E5DD;
+	border-radius: 25px;
+	border: 1px solid #E7E5DD;
+	padding: 8px 20px;
+}
+.connection:hover>a{
+	background: white;
+}
+.connection a:hover>span{
+	color: black;
+}
+
+/*baner*/
+
+.baner{
+	position: relative;
+}
+.baner img{
+	width: 100%;
+	opacity: 0.4;
+	overflow: hidden;
+}
+.start_catalog{
+	position: absolute;
+	top: 27%;
+}
+.start_catalog h1{
+	font-family: Intro Bold;
+	font-size: 34px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 19px;
+}
+.start_catalog h1 span{
+	color: red;
+}
+.start_catalog p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 34px;
+}
+.start_catalog div a{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	mix-blend-mode: normal;
+	text-decoration: none;
+	border-radius: 25px;
+	padding: 8px 36px;
+	background: linear-gradient(90deg, #FF8400 -2.8%, #EC1919 51.76%, #B52200 100%);
+}
+.baner .subscribe{
+	position: absolute;
+	top: 70%;
+}
+.subscribe ul{
+	list-style-type: none;
+}
+.subscribe ul li{
+	display: inline-block;
+	padding-bottom: 17px;
+	margin-left: 40px;
+}
+.subscribe ul li img{
+	opacity: 1;
+}
+
+/*top*/
+
+.cards{
+	background: #FFFFFF;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.cards h2{
+	text-align: center;
+	font-family: Intro Regular Caps;
+	font-size: 24px;
+	line-height: 25px;
+	color: #212121;
+	padding-right: 30px;
+}
+.cards h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: capitalize;
+	color: #222222;
+	text-align: center;
+	padding-right: 30px;
+}
+.cards h4{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: capitalize;
+	color: #222222;
+	text-align: center;
+	padding-right: 30px;
+}
+.cards p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: capitalize;
+	color: #9A9A9A;
+	text-align: center;
+	padding-right: 30px;
+}
+.cards .order h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 25px;
+	color: #6AC259;
+	mix-blend-mode: normal;
+}
+.cards>p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: capitalize;
+	color: #9A9A9A;
+}
+.cards .order>h2{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #222222;
+}
+
+/*advantages_container*/
+
+.advantages h2{
+	padding-left: 200px;
+}
+.advantages_cards{
+	background: #FFFFFF;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+	height: 302px;
+}
+.advantages_cards:hover{
+	right: 5px;
+	bottom: 5px;
+}
+.advantages .advantages_cards img{
+	padding-left: 60px;
+}
+.advantages .advantages_cards h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	color: #212121;
+}
+.advantages .advantages_cards p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	color: #212121;
+}
